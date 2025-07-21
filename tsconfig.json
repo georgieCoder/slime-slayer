@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "target": "ES6",
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "sourceMap": true,
+    "types": ["phaser"],
+    "baseUrl": "./src",
+    "paths": {
+      "@/*": ["*"],
+    },
+    "lib": ["ES2020", "DOM"]
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist"]
+}

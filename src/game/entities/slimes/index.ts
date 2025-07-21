@@ -1,0 +1,7 @@
+export type { ISlime, ISlimeParams } from './base'
+export * from './constants'
+export * from './types'
+export * from './jumping'
+export * from './shooting'
+export * from './projectile'
+export * from './hiding'

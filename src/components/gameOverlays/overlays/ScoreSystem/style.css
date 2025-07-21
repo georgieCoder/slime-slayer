@@ -1,0 +1,32 @@
+.score-container {
+    position: absolute;
+    top: 0;
+    left: 0; 
+    width: 100%;
+    height: 100%;
+}
+
+.score {
+    margin-left: min(2vh, 3.1vw);
+    margin-top: min(2vh, 2.7vw);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 2%;
+    padding-left: 9%;
+    text-align: center;
+}
+
+.score.image {
+    width: min(34vw, 21.6vh);
+    height: min(12.6vw, 8vh);
+    background-image: url('/src/assets/game_overlays/score.png')
+}
+
+.score p {
+    width: 100%;
+    font-family: 'Pixgamer';
+    font-size: min(5vh, 7.8vw);
+    color: white;
+}

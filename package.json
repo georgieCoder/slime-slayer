@@ -1,0 +1,52 @@
+{
+  "name": "slime-slayer",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "webpack serve --config webpack.dev.js",
+    "build": "webpack --config webpack.prod.js",
+    "type-check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@types/node": "^22",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "core-js": "^3.42.0",
+    "crypto": "^1.0.1",
+    "events": "^3.3.0",
+    "phaser": "^3.88",
+    "react": "^19",
+    "react-dom": "^19",
+    "regenerator-runtime": "^0.14.1",
+    "zustand": "^5.0.5"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.23",
+    "@babel/plugin-transform-runtime": "^7.23",
+    "@babel/preset-env": "^7.23",
+    "@babel/preset-react": "^7.23",
+    "@babel/preset-typescript": "^7.23",
+    "@babel/runtime": "^7.23",
+    "@pmmmwh/react-refresh-webpack-plugin": "^0.6",
+    "@types/events": "^3.0.3",
+    "autoprefixer": "^10.4.21",
+    "babel-loader": "^9",
+    "clean-webpack-plugin": "^4.0.0",
+    "copy-webpack-plugin": "^11",
+    "css-loader": "^6",
+    "css-minimizer-webpack-plugin": "^6",
+    "html-webpack-plugin": "^5",
+    "mini-css-extract-plugin": "^2",
+    "postcss": "^8.5.3",
+    "postcss-loader": "^8",
+    "postcss-preset-env": "^10.1.6",
+    "react-refresh": "^0.14",
+    "terser-webpack-plugin": "^5",
+    "ts-loader": "^9",
+    "typescript": "^5",
+    "webpack": "^5",
+    "webpack-cli": "^5",
+    "webpack-dev-server": "^4",
+    "webpack-merge": "^5",
+    "webpack-obfuscator": "^3.5.1"
+  }
+}

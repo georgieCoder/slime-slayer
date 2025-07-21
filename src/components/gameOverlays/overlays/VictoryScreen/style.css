@@ -1,0 +1,45 @@
+.victory-screen {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.victory-screen_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: -27%;
+}
+
+.victory-screen_text {
+    aspect-ratio: 133 / 68;
+    width: 83.6%;
+    margin-right: 10%;
+}
+
+.victory-screen_text.icon {
+    background-image: url('/src/assets/game_overlays/victory-text.webp');
+}
+
+.victory-screen_slime {
+    aspect-ratio: 61 / 69;
+    width: 19.2%;
+    margin-top: -8%;
+}
+
+.victory-screen_slime.icon {
+    background-image: url('/src/assets/game_overlays/celebrating-slime.webp');
+}
+
+.victory-screen_hint {
+    font-family: 'EpilepsySans';
+    margin-top: 5%;
+    font-size: min(7.8vw, 5vh);
+    text-align: center;
+}

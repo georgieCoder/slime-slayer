@@ -1,0 +1,163 @@
+@font-face {
+    font-family: 'TeenyTinyPixls';
+    src: url('/src/assets/game_overlays/fonts/TeenyTinyPixls.woff2') format('woff2');
+  }
+  
+@font-face {
+    font-family: 'EpilepsySans';
+    src: url('/src/assets/game_overlays/fonts/EpilepsySans.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Pixgamer';
+    src: url('/src/assets/game_overlays/fonts/PixgamerRegular.woff2') format('woff2');
+}
+
+*, *::after, *::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    border: none;
+    background-color: transparent;
+}
+
+body {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    image-rendering: pixelated;
+}
+
+#root {
+    background-color: #242222;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.app_container {
+    max-height: calc(100vw * 250 / 159);
+    height: 100%;
+    max-width: calc(100vh * 159 / 250);
+    width: 100%;
+    overflow: clip;
+}
+
+.app {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.overlay {
+    z-index: 10;
+}
+
+.transparent {
+    opacity: 0;
+}
+
+.svg_clickable {
+    cursor: pointer;
+    transition: fill 0.2s;
+}
+
+.svg_clickable:hover {
+    fill: #a3c5ed;
+}
+
+.svg_clickable:active {
+    fill: #7491b3
+}
+
+.svg_clickable__dark:hover {
+    fill: #27313a;
+}
+
+.svg_clickable__dark:active {
+    fill: #222b35
+}
+
+.sleeping-slime_sleep {
+    background-image: url('/src/assets/main_screen/webp/sleeping_slime_sleep.webp');
+}
+
+.sleeping-slime_awake {
+    background-image: url('/src/assets/main_screen/webp/sleeping_slime_awake.webp');
+}
+
+.sleeping-slime_awaken {
+    background-image: url('/src/assets/main_screen/png/sleeping_slime_awaken.png');
+}
+
+#game-container {
+    aspect-ratio: 159 / 250;;
+}
+
+.game-container_frame {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9;
+}
+
+.game-container_frame.image {
+    background-image: url('/src/game/assets/ui/background/leaves.png');
+}
+
+.yellow-slime {
+    background-image: url('/src/assets/loader/yellow_slime.webp');
+    width: 23px;
+    height: 34px;
+}
+
+.white-smoke {
+    width: 88px;
+    height: 48px;
+    background-image: url('/src/assets/loader/white_smoke.webp');
+}
+
+.hint {
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+  animation: hint-blink 0.8s infinite alternate;
+}
+
+@keyframes hint-blink {
+  from {
+    transform: scale(1);
+    color: rgb(231, 229, 229);
+  }
+  to {
+    transform: scale(1.02);
+    color: white;
+  }
+}

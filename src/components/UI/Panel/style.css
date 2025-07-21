@@ -1,0 +1,24 @@
+.panel-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.panel {
+    aspect-ratio: 47 / 50;
+    width: 59.1%;
+    background-image: url(/src/assets/game_overlays/panel-frame.png);
+    padding: 3.2%;
+}
+
+.panel_content {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: clip;
+}

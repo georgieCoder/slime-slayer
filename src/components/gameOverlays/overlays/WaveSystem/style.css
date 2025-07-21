@@ -1,0 +1,17 @@
+.wave-system {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.current-wave {
+    position: absolute;
+    right: min(2vh, 3.1vw);
+    top: min(2vh, 2.7vw);
+    font-family: 'Pixgamer';
+    color: white;
+    font-size: min(9.4vw, 6vh);
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+}

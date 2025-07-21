@@ -1,0 +1,174 @@
+.information-panel {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    aspect-ratio: 35 / 53;
+    height: 83.2%;
+    transform: translate(-50%, -50%);
+    background-image: url('/src/assets/main_screen/information-panel/background.png');
+    padding: 3.6% 4.9% 4.8% 4.9%;
+    background-color: #d4b98e;
+}
+
+.information-panel_inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    padding: 32.4% 10.3% 10.3% 6.6%;
+}
+
+.information-panel_header {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-image: url('/src/assets/main_screen/information-panel/header.png');
+    aspect-ratio: 31 / 8;
+    width: 100%;
+}
+
+.information-panel_close-btn {
+    position: absolute;
+    top: 1%;
+    left: 0;
+    aspect-ratio: 1;
+    height: 9.25%;
+}
+
+.information-panel_inner-container {
+    width: 100%;
+    height: 100%;
+    overflow: clip;
+}
+
+.information-panel_slider-container {
+    position: absolute;
+    top: 12.3%;
+    right: 1.6%;
+    width: 6.55%;
+    height: 79.7%;
+}
+
+.information-panel_slider {
+    position: absolute;
+    height: 27%;
+    top: 0;
+    left: 0;
+    cursor: grab;
+    user-select: none;
+}
+
+.information-panel_slider:active {
+    cursor: grabbing;
+}
+
+.information-panel_content {
+    width: 100%;
+    height: 100%;
+    padding: 1px;
+    text-align: left;
+    overflow-y: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.information-panel_content::-webkit-scrollbar {
+    display: none;
+}
+
+/* Menu items styles */
+.menu-items {
+    display: flex;
+    flex-direction: column;
+    gap: 2%;
+}
+
+.menu-item {
+    cursor: pointer;
+    color: black;
+    font-family: 'Pixgamer';
+    word-wrap: break-word;
+    line-height: 0.9;
+    font-size: min(9.4vw, 6vh);
+    font-weight: normal;
+    margin-bottom: 1%;
+    transition: transform 0.2s ease;
+}
+
+.menu-item:hover {
+    transform: translateX(5px);
+}
+
+/* Modal content styles */
+.modal-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.modal-back-btn {
+    position: absolute;
+    top: 13%;
+    left: 5%;
+    cursor: pointer;
+    width: min(7.5vw, 4.8vh);
+    transform: rotate(180deg);
+}
+
+.modal-title {
+    color: black;
+    font-family: 'Pixgamer';
+    word-wrap: break-word;
+    line-height: 0.9;
+    font-size: min(9.4vw, 6vh);
+    font-weight: normal;
+    margin-bottom: 4.4%;
+}
+
+.modal-body {
+    flex-grow: 1;
+}
+
+/* Common styles */
+.information-panel p,
+.information-panel li,
+.information-panel h3 {
+    color: black;
+    font-family: 'Pixgamer';
+    word-wrap: break-word;
+    line-height: 0.9;
+}
+
+.information-panel h3 {
+    font-size: min(9.4vw, 6vh);
+    font-weight: normal;
+    margin-bottom: 1.4%;
+}
+
+.information-panel p {
+    margin-bottom: 2.4%;
+    font-size: min(6vw, 3.8vh);
+}
+
+.information-panel ul {
+    list-style-type: none;
+}
+
+.information-panel li {
+    color: black;
+    font-family: 'Pixgamer';
+    font-size: min(6vw, 3.8vh);
+    margin-bottom: 3%;
+    text-indent: 6%;
+    position: relative;
+    word-wrap: break-word;
+}
+
+.information-panel li::before {
+    content: "■";
+    color: #5e3315;
+    position: absolute;
+    left: -0.8%;
+    top: 2%;
+    font-size: min(3.8vw, 2.4vh);
+}

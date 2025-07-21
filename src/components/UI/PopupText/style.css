@@ -1,0 +1,51 @@
+.popup-text {
+  position: absolute;
+  white-space: pre;
+  text-align: center;
+  display: inline-block;
+  left: var(--position-x, 50%);
+  top: var(--position-y, 50%);
+  text-transform: uppercase;
+  word-break: unset;
+  transform: translate(-50%, -50%) rotate(var(--rotation, -20deg));
+  font-weight: normal;
+  color: #ffffff;
+  opacity: 1;
+  font-family: 'Pixgamer';
+  text-shadow: 0px 0px 2px black;
+  animation: 
+    disappearance var(--duration, 3000ms) ease-in forwards,
+    colorBlink 1.5s steps(2, end) infinite alternate,
+    increasingFontSize var(--duration, 3000ms) cubic-bezier(0.150, 0.735, 0.475, 0.915);
+  pointer-events: none;
+}
+
+@keyframes disappearance {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes increasingFontSize {
+  from {
+    font-size: var(--initial-font-size, 50px);
+  }
+  to {
+    font-size: var(--final-font-size, 100px);
+  }
+}
+
+@keyframes colorBlink {
+  0%, 27%, 65%, 90% {
+    color: var(--color1, white);
+  }
+  10%, 35%, 75% {
+    color: var(--color2, rgb(255, 75, 75));
+  }
+  23%, 55%, 79%, 95% {
+    color: var(--color3, #f2d53b);
+  }
+}

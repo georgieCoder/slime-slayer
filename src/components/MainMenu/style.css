@@ -1,0 +1,93 @@
+.main-screen {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    transition: opacity 0.5s;
+}
+
+.main-screen_background {
+    background-image: url('/src/assets/main_screen/webp/background.webp');
+}
+
+.main-screen_about {
+    position: absolute;
+    top: 1.6%;
+    left: 2.5%;
+    height: 7.6%;
+    aspect-ratio: 1;
+}
+
+.main-screen_about svg {
+    fill: #ffffff
+}
+
+.main-screen_play-btn {
+    position: absolute;
+    bottom: 7.8%;
+    left: 26.1%;
+    height: 9.6%;
+    width: 47%;
+}
+
+.play-btn {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.play-btn_text {
+    background-color: transparent;
+    border: none;
+    aspect-ratio: 5 / 1;
+    height: 41.7%;
+    display: flex;
+}
+
+.play-btn_text svg {
+    fill: #ffffff;
+}
+
+.play-btn_slime {
+    height: 100%;
+    aspect-ratio: 55 / 48;
+    display: flex;
+    margin-bottom: -1%;
+}
+
+.play-btn_slime img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+#new-description-label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Pixgamer';
+    color: white;
+    font-size: min(5vw, 3.2vh);
+    position: absolute;
+    top: 7.2%;
+    left: 5.5%;
+    height: 7.6%;
+    animation: color-change 0.5s forwards infinite alternate;
+}
+
+@keyframes color-change {
+    0% {
+        color: white
+    }
+    /* 50% {
+        color: #1d317f;
+    } */
+    100% {
+        color: #f2d53b
+    }
+}

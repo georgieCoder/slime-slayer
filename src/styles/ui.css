@@ -1,0 +1,38 @@
+.close-btn {
+    cursor: pointer;
+    background-image: url(/src/assets/main_screen/information-panel/close-button.png);
+}
+
+.close-btn:hover {
+    background-image: url(/src/assets/main_screen/information-panel/close-button-hovered.png);
+}
+
+.slider {
+    background-image: url(/src/assets/main_screen/information-panel/slider.png);
+    cursor: grab;
+    aspect-ratio: 4 / 21;
+}
+
+.slider:active {
+    cursor: grabbing;
+}
+
+.question-sign {
+    background-image: url(/src/assets/main_screen/information-panel/question-sign.png);
+    cursor: pointer;
+}
+
+.question-sign:hover {
+    background-image: url(/src/assets//main_screen/information-panel/question-sign-hovered.png);
+}
+
+.icon {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
+}
+
+.arrow {
+    aspect-ratio: 1;
+    background-image: url(/src/assets/main_screen/information-panel/arrow.svg);
+}
